@@ -1,0 +1,97 @@
+/* ALL CSS MEDIA QUERIES WILL BE SHOULD BE WRITTEN HERE. */
+/* homepage */
+/* nav */
+@media (max-width: 1000px) {
+  .toggleMenu {
+    position: absolute;
+    right: 50px;
+    background-image: url(/images/navigation-bar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 37px;
+    width: 40px;
+    height: 40px;
+    padding: 2em;
+    z-index: 1000;
+    color: black;
+  }
+  .toggleMenu.active {
+    position: fixed;
+    background-image: url(/images/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px;
+    color: black;
+  }
+  .navigation {
+    justify-content: center;
+    flex-direction: column;
+    transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+    -ms-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    transform-origin: top;
+    max-height: 0;
+    opacity: 0;
+  }
+  .navigation.active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    max-height: 100%;
+    opacity: 1;
+    background-color: var(--color-yellow);
+    z-index: 999;
+  }
+  .navigation ul {
+    flex-direction: column;
+    text-align: center;
+    /* margin-left: -50px; */
+  }
+  .secondary-list {
+    margin-top: 2em;
+    margin-right: 0;
+  }
+  /* herosection */
+  .hero {
+    flex-wrap: wrap;
+    gap: 3em;
+    padding: 0.2em;
+    /* padding-left: 0; */
+  }
+  .dlt {
+    padding-top: 0;
+  }
+  .dlt2 {
+    padding-top: 0px;
+  }
+  .col {
+    flex: 100%;
+    max-width: 60%;
+    text-align: center;
+  }
+  /* footer */
+  .inner-footer {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .logo2 img {
+    margin-left: 0px;
+  }
+  .contact-img {
+    padding-left: 0px;
+  }
+  .ellipse {
+    display: none;
+  }
+}
+/* end */

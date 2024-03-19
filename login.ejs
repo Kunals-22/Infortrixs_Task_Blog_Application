@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- <div class="navbar">
+        <div class="logo"></div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Blogs</li>
+            <li>Contact</li>
+        </ul>
+        <div class="buttons">
+            <button class="signup">Sign Up</button>
+            <button class="login">Log In</button>
+        </div>
+    </div> -->
+
+    <form action="/login" method="post">
+    <div class="login-container">
+        <h2>Log In</h2>
+        <br>
+        <label for="email_pass">Email</label>
+        <input type="email" placeholder="" name="username" required>
+        <label for="psw">Password</label>
+        <input type="password" placeholder="" name="password" required>
+        <button type="submit">Log In</button>
+        <% if (errorMessage) { %>
+            <p class="error"><%= errorMessage %></p>
+          <% } %>
+    </div>
+    </form>
+
+    <div class="circle">
+
+    </div>
+</body>
+</html>
